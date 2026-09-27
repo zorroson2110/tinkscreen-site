@@ -27,14 +27,8 @@ a:hover { text-decoration: underline; }
 }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; letter-spacing: -0.02em; }
 .brand:hover { text-decoration: none; }
-.mark {
-  position: relative; width: 28px; height: 28px; border-radius: 8px;
-  background: linear-gradient(135deg, #7c5cff, #a95cff 48%, #ff5fa2);
-}
-.mark::after {
-  content: ""; position: absolute; left: 9px; top: 6px; width: 10px; height: 16px;
-  border: 2px solid #fff; border-radius: 3px; box-sizing: border-box;
-}
+.mark { width: 28px; height: 28px; border-radius: 8px; background: url("logo.svg") center / cover no-repeat; }
+.hero-logo { display: block; width: 112px; height: 112px; margin: 0 auto 28px; border-radius: 26px; box-shadow: 0 18px 40px -16px rgba(124, 92, 255, 0.7); }
 .bar nav { display: flex; gap: 20px; font-size: 14px; }
 .bar nav a { color: var(--muted); }
 .bar nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
